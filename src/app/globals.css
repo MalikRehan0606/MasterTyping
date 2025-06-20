@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 18%; /* Dark Slate Blue */
+    --foreground: 210 40% 98%; /* Near White */
+
+    --card: 220 13% 22%; /* Slightly Lighter Dark Slate Blue */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 13% 20%; /* Darker Popover Background */
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 85% 65%; /* Vibrant Indigo/Purple */
+    --primary-foreground: 210 40% 98%; /* Near White for contrast */
+
+    --secondary: 220 13% 25%; /* Medium Dark Slate Blue */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 10% 35%; /* Muted Dark Blue/Grey */
+    --muted-foreground: 210 20% 75%; /* Lighter Muted Text */
+
+    --accent: 40 90% 55%; /* Bright Yellow/Orange */
+    --accent-foreground: 40 25% 15%; /* Dark Brown/Black text for accent */
+
+    --destructive: 0 70% 55%; /* Vibrant Red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 30%; /* Darker Border */
+    --input: 220 10% 30%; /* Darker Input Background */
+    --ring: 260 85% 70%; /* Slightly lighter indigo/purple for ring */
+
+    --chart-1: 260 70% 60%; /* Indigo-based chart color */
+    --chart-2: 220 70% 65%;
+    --chart-3: 180 70% 55%;
+    --chart-4: 300 70% 60%;
+    --chart-5: 30 70% 60%;
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 13% 16%; /* Slightly Darker Sidebar */
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 260 85% 65%; /* Indigo/Purple */
+    --sidebar-primary-foreground: 210 40% 98%; /* Near White */
+    --sidebar-accent: 40 90% 55%;
+    --sidebar-accent-foreground: 40 25% 15%;
+    --sidebar-border: 220 10% 25%;
+    --sidebar-ring: 260 85% 70%; /* Lighter Indigo/Purple */
+  }
+
+  .dark {
+    --background: 230 25% 12%; /* Very Dark Indigo */
+    --foreground: 210 40% 95%; /* Light Grey */
+
+    --card: 230 25% 15%; /* Slightly Lighter Dark Indigo */
+    --card-foreground: 210 40% 95%;
+
+    --popover: 230 25% 14%; /* Darker Popover for Dark Mode */
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 250 75% 60%; /* Brighter Indigo for Dark Mode */
+    --primary-foreground: 210 40% 98%; /* Near White */
+
+    --secondary: 230 20% 20%; /* Darker Indigo/Blue */
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 230 15% 30%; /* Muted Dark Indigo */
+    --muted-foreground: 210 25% 70%; /* Lighter Muted Text for Dark Mode */
+
+    --accent: 50 85% 50%; /* Richer Yellow/Orange for Dark Mode */
+    --accent-foreground: 50 95% 10%; /* Very Dark Brown */
+
+    --destructive: 0 75% 60%; /* Bright Red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 230 15% 25%; /* Darker Border for Dark Mode */
+    --input: 230 15% 25%; /* Darker Input Background for Dark Mode */
+    --ring: 250 75% 65%; /* Lighter bright indigo for ring */
+    
+    --chart-1: 250 65% 55%; /* Brighter Indigo-based chart color */
+    --chart-2: 210 65% 60%;
+    --chart-3: 190 65% 50%;
+    --chart-4: 290 65% 55%;
+    --chart-5: 40 75% 55%;
+
+    --sidebar-background: 230 25% 10%; /* Even Darker Sidebar for Dark Mode */
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 250 75% 60%; /* Bright Indigo */
+    --sidebar-primary-foreground: 210 40% 98%; /* Near White */
+    --sidebar-accent: 50 85% 50%;
+    --sidebar-accent-foreground: 50 95% 10%;
+    --sidebar-border: 230 15% 20%;
+    --sidebar-ring: 250 75% 65%; /* Lighter Bright Indigo */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
